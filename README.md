@@ -27,5 +27,5 @@ Este projeto foi construído utilizando as tecnologias fundamentais do desenvolv
 
 ## 📂 Estrutura de Pastas
 
-O projeto está organizado de forma modular para facilitar a manutenção e a escalabilidade, seguindo as melhores práticas do mercado:
+O projeto está organizado de forma modular para facilitar a manutenção e a escalabilidade, seguindo as melhores práticas do mercado.
 
