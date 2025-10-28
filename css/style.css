@@ -14,7 +14,7 @@ main {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     margin-top: 40px;
     background-color: #f2f2f2;
 }
@@ -33,7 +33,7 @@ header {
 }
 
 .logo img {
-    max-height: 80px;
+    max-height: 180px;
 }
 
 .social-icons {
@@ -45,14 +45,14 @@ header {
     height: 24px;
 }
 
-/* Menu de Navegação */
+
 .main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -63,10 +63,10 @@ header {
 }
 
 .main-nav a:hover {
-    color: #007bff;
+    color: #ff6600;
 }
 
-/* Formulários */
+
 form {
     max-width: 700px;
     margin: 20px auto;
@@ -125,4 +125,108 @@ button {
 
 .apoiadores-grid img {
     max-width: 100%;
+}
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.donation-options label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donation-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.donation-options input[type="number"] {
+    width: 80px; 
+    margin-left: 5px;
+}
+
+.site-footer {
+    background-color: #000000; 
+    color: #ffffff;          
+    padding: 40px 5%;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 40px;
+}
+
+.footer-nav {
+    text-align: left;
+}
+
+
+.footer-nav h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-branding {
+    text-align: center;
+}
+
+.footer-logo {
+    max-height: 190px; 
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.footer-social img {
+    height: 25px;
+    filter: invert(0); 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444; 
+    font-size: 0.9em;
+    color: #ccc; 
+}
+
+.nav-columns {
+    display: flex; 
+    gap: 40px;    
 }
