@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,12 +16,19 @@
             <img src="imagens/logo.png" alt="Logo da ONG Saber Liberta">
         </a>
         <div class="social-icons">
-            <a href="#"><img src="imagens/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="imagens/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="imagens/twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="imagens/youtube.svg" alt="Youtube"></a>
+            <a href="#" aria-label="Facebook da ONG Saber Liberta"><img src="imagens/facebook.svg" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram da ONG Saber Liberta"><img src="imagens/instagram.svg" alt="Instagram"></a>
+            <a href="#" aria-label="Twitter da ONG Saber Liberta"><img src="imagens/twitter.svg" alt="Twitter"></a>
+            <a href="#" aria-label="Youtube da ONG Saber Liberta"><img src="imagens/youtube.svg" alt="Youtube"></a>
         </div>
     </div>
+
+    <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <nav class="main-nav">
         <ul>
             <li><a href="index.html">Página Inicial</a></li>
@@ -32,15 +41,17 @@
     </nav>
 </header>
 
+<main id="app-container" tabindex="-1">
+
     <section class="page-banner banner-index">
         <div class="banner-content">
+             <h1 class="sr-only">Saber Liberta</h1> 
         </div>
     </section>
-
-<main id="app-container">
+    
     <h1>Conhecimento que Liberta, Futuro que se Transforma</h1>
     <p>
-        Bem-vindo à **ONG Saber Liberta**. Nascemos de um propósito claro e urgente: combater a desigualdade social em sua raiz, usando a educação e a capacitação como nossas principais ferramentas. Acreditamos que o conhecimento não apenas abre portas, mas liberta indivíduos, empodera comunidades e constrói um futuro onde todos têm a chance de prosperar.
+        Bem-vindo à <strong>ONG Saber Liberta.</strong> Nascemos de um propósito claro e urgente: combater a desigualdade social em sua raiz, usando a educação e a capacitação como nossas principais ferramentas. Acreditamos que o conhecimento não apenas abre portas, mas liberta indivíduos, empodera comunidades e constrói um futuro onde todos têm a chance de prosperar.
     </p>
 
     <hr> 
@@ -127,6 +138,7 @@
                 <a href="#"><img class="svg-icon" src="imagens/twitter1.svg" alt="Twitter"></a>
                 <a href="#"><img class="svg-icon" src="imagens/youtube1.svg" alt="Youtube"></a>
             </div>
+            <button id="toggle-contrast" class="contrast-button">Alto Contraste</button>
         </div>
 
     </div> 

@@ -1,144 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Doador - ONG Saber Liberta</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<!-- cadastro.html -->
 
-<header>
-    <div class="header-top">
-        <a href="index.html" class="logo">
-            <img src="imagens/logo.png" alt="Logo da ONG Saber Liberta">
-        </a>
-        <div class="social-icons">           
-            <a href="#"><img src="imagens/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="imagens/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="imagens/twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="imagens/youtube.svg" alt="Youtube"></a>
-        </div>
+<section class="page-banner banner-cadastro">
+    <div class="banner-content">
+        <h1 class="sr-only">Seja Doador</h1> 
     </div>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="projetos.html">Quero Ajudar</a></li>
-            <li><a href="cadastro.html">Doador</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="apoiadores.html">Apoiadores</a></li>
-        </ul>
-    </nav>
-</header>
+</section>
 
-    <section class="page-banner banner-cadastro">
-        <div class="banner-content">
+<h1>Cadastro de Apoiador</h1>
+<p>Preencha seus dados para se tornar um doador e apoiar nossa causa.</p>
+<form action="#" method="post">
+    
+    <fieldset>
+        <legend>1. Suas Informações</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required minlength="3">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>2. Seu Endereço</legend>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+
+        <label for="endereco">Endereço (Rua, Nº, Bairro):</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>3. Escolha o Valor da Doação</legend>
+        <div class="donation-options">
+            <label><input type="radio" name="valor_doacao" value="5" required> R$ 5,00</label>
+            <label><input type="radio" name="valor_doacao" value="10"> R$ 10,00</label>
+            <label><input type="radio" name="valor_doacao" value="20"> R$ 20,00</label>
+            <label><input type="radio" name="valor_doacao" value="50"> R$ 50,00</label>
+            <label><input type="radio" name="valor_doacao" value="100"> R$ 100,00</label>
+            <label><input type="radio" name="valor_doacao" value="150"> R$ 150,00</label>
+            <label><input type="radio" name="valor_doacao" value="200"> R$ 200,00</label>
+            <label><input type="radio" name="valor_doacao" value="300"> R$ 300,00</label>
+            <label><input type="radio" name="valor_doacao" value="400"> R$ 400,00</label>
+            <label><input type="radio" name="valor_doacao" value="500"> R$ 500,00</label>                
         </div>
-    </section>
+    </fieldset>
 
-<main>
-    <h1>Cadastro de Apoiador</h1>
-    <p>Preencha seus dados para se tornar um doador e apoiar nossa causa.</p>
-    <form action="#" method="post">
-        
-        <fieldset>
-            <legend>1. Suas Informações</legend>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required minlength="3">
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-
-            <label for="nascimento">Data de Nascimento:</label>
-            <input type="date" id="nascimento" name="nascimento" required>
-        </fieldset>
-
-        <fieldset>
-            <legend>2. Seu Endereço</legend>
-            <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" placeholder="00000-000" required>
-
-            <label for="endereco">Endereço (Rua, Nº, Bairro):</label>
-            <input type="text" id="endereco" name="endereco" required>
-
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" required>
-
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" required>
-        </fieldset>
-
-        <fieldset>
-            <legend>3. Escolha o Valor da Doação</legend>
-            <div class="donation-options">
-                <label><input type="radio" name="valor_doacao" value="5" required> R$ 5,00</label>
-                <label><input type="radio" name="valor_doacao" value="10"> R$ 10,00</label>
-                <label><input type="radio" name="valor_doacao" value="20"> R$ 20,00</label>
-                <label><input type="radio" name="valor_doacao" value="50"> R$ 50,00</label>
-                <label><input type="radio" name="valor_doacao" value="100"> R$ 100,00</label>
-                <label><input type="radio" name="valor_doacao" value="150"> R$ 150,00</label>
-                <label><input type="radio" name="valor_doacao" value="150"> R$ 200,00</label>
-                <label><input type="radio" name="valor_doacao" value="150"> R$ 300,00</label>
-                <label><input type="radio" name="valor_doacao" value="150"> R$ 400,00</label>
-                <label><input type="radio" name="valor_doacao" value="150"> R$ 500,00</label>                
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>4. Forma de Pagamento</legend>
-            <div class="payment-method">
-                <label><input type="radio" name="pagamento" value="pix" checked> <strong>Pix</strong></label>
-                <p>Ao finalizar, um QR Code será gerado para o pagamento.</p>
-            </div>
-        </fieldset>
-        
-        <button type="submit">Finalizar e Gerar Pix</button>
-    </form>
-</main>
-
-<footer class="site-footer">
-    <div class="footer-container">
-
-        <div class="footer-nav">
-            
-            <div class="nav-columns">
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="apoiadores.html">Apoiadores</a></li>
-                    <li><a href="projetos.html">Quero Ajudar</a></li>
-                </ul>
-                <ul>
-                    <li><a href="cadastro.html">Doador</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>                    
-                </ul>
-            </div>
+    <fieldset>
+        <legend>4. Forma de Pagamento</legend>
+        <div class="payment-method">
+            <label><input type="radio" name="pagamento" value="pix" checked> <strong>Pix</strong></label>
+            <p>Ao finalizar, um QR Code será gerado para o pagamento.</p>
         </div>
-
-        <div class="footer-branding">
-            <img src="imagens/logo2.png" alt="Logo da ONG Saber Liberta" class="footer-logo">
-            <div class="footer-social">
-                <a href="#"><img class="svg-icon" src="imagens/facebook1.svg" alt="Facebook"></a>
-                <a href="#"><img class="svg-icon" src="imagens/instagram1.svg" alt="Instagram"></a>
-                <a href="#"><img class="svg-icon" src="imagens/twitter1.svg" alt="Twitter"></a>
-                <a href="#"><img class="svg-icon" src="imagens/youtube1.svg" alt="Youtube"></a>
-            </div>
-        </div>
-
-    </div> 
-
-    <div class="footer-bottom">
-        <p>&copy; 2025 ONG Saber Liberta. Todos os direitos reservados.</p>
-    </div>
-</footer>
-
-<script src="js/scripts.js"></script>
-</body>
-</html>
+    </fieldset>
+    
+    <button type="submit">Finalizar e Gerar Pix</button>
+</form>
