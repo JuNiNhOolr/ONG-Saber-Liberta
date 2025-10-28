@@ -1,4 +1,4 @@
-# Plataforma Web para a ONG Saber Liberta
+# Plataforma Web para a "ONG Saber Liberta"
 
 ## 📖 Sobre o Projeto
 
