@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     customValorInput.focus();
                 } else {
                     customValorInput.disabled = true;
-                    customValorInput.value = ''; // Limpa o campo
+                    customValorInput.value = ''; 
                 }
             });
         });
